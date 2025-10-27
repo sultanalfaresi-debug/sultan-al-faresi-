@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quis</title>
+  <link rel="stylesheet" href="style1.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <aside class="sidebar">
+      <h2 class="logo">Learning Management Sistem PPKn</h2>
+      <ul>
+        <li><a href="indexx.html">Beranda</a></li>
+        <li><a href="modul.html">Materi</a></li>
+        <li><a href="modul2.html" class="active">Evaluasi / Quiz</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h3>Evaluasi: Pancasila sebagai Dasar Negara</h3>
+      </header>
+
+      <section id="quiz">
+        <form id="quizForm">
+          <p>1. Pancasila disebut dasar negara karena...</p>
+          <label><input type="radio" name="q1" value="a"> Menjadi sumber hukum tertinggi di Indonesia</label><br>
+          <label><input type="radio" name="q1" value="b"> Hanya digunakan saat upacara kenegaraan</label><br><br>
+
+          <p>2. Pancasila terdapat dalam...</p>
+          <label><input type="radio" name="q2" value="a"> Pembukaan UUD 1945 alinea ke-4</label><br>
+          <label><input type="radio" name="q2" value="b"> Batang tubuh UUD 1945</label><br><br>
+
+          <p>3. Sila ke-3 Pancasila berbunyi...</p>
+          <label><input type="radio" name="q3" value="a"> Persatuan Indonesia</label><br>
+          <label><input type="radio" name="q3" value="b"> Keadilan Sosial</label><br><br>
+
+          <p>4. Nilai kemanusiaan terdapat dalam sila ke...</p>
+          <label><input type="radio" name="q4" value="a"> 2</label><br>
+          <label><input type="radio" name="q4" value="b"> 4</label><br><br>
+
+          <p>5. Ir. Soekarno mengusulkan dasar negara pada tanggal...</p>
+          <label><input type="radio" name="q5" value="a"> 1 Juni 1945</label><br>
+          <label><input type="radio" name="q5" value="b"> 17 Agustus 1945</label><br><br>
+
+          <button type="button" onclick="checkAnswersDetailed()">Kirim Jawaban</button>
+        </form>
+        <p id="result"></p>
+      </section>
+    </main>
+  </div>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
